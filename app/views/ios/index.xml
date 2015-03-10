@@ -1,0 +1,16 @@
+<Alloy>
+	<Collection src = "todolists" />
+	
+	<NavigationWindow id = "navGroupWin">
+		<Window class = "container" title = "My lists">
+			<View layout = "vertical">
+				<TextField id = "newTodolist" hintText = "Name of the new list..."></TextField>
+				<Button onClick = "createTodolist">CREATE LIST</Button>
+			
+				<TableView dataCollection = "todolists">
+					<TableViewRow title = "{title}" onClick = "showTodolist"></TableViewRow>
+				</TableView>
+			</View>
+		</Window>
+	</NavigationWindow>
+</Alloy>

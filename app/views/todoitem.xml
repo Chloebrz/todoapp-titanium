@@ -1,0 +1,7 @@
+<Alloy>
+	<TableViewRow id = "item">
+		<Label id = "check" class = "icon" onClick = "toggleStatus"></Label>
+		<Label id = "itemDesc" text = "{desc}"/>
+		<Label id = "remove" class = "icon" onClick = "deleteItem">1</Label>
+	</TableViewRow>
+</Alloy>

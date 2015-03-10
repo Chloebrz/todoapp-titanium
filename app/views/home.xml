@@ -1,0 +1,19 @@
+<Alloy>
+	<Collection src = "todolists" />
+	
+	<Window class = "container" title = "Konnektid TodoApp">
+		<View layout = "vertical">
+			<TextField id = "newTodolist" hintText = "Add list"></TextField>
+			<Button class = "addBtn" onClick = "createTodolist">2</Button>
+		
+			<TableView dataCollection = "todolists">
+				<TableViewRow title = "{title}" onClick = "showTodolist"></TableViewRow>
+			</TableView>
+		</View>
+		
+		<!-- Android menu -->
+	    <Menu platform = "android">
+	      	<MenuItem title = "Logout" onClick = "logout"/>
+	    </Menu>
+	</Window>
+</Alloy>

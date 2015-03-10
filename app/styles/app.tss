@@ -1,0 +1,45 @@
+".container" : {
+	font : {
+		fontFamily : "Open Sans"
+	},
+	color : "#737373"
+},
+
+"TextField" : {
+	borderWidth : 1,
+	borderColor : "#EEEEEE",
+	paddingLeft : "5px",
+	lineHeight : "27px",
+	backgroundColor : "#FFFFFF",
+	width : "100%",
+	color : "#737373"
+},
+
+"TableViewRow" : {
+	height : "100px",
+	color : "#737373",
+	width : "100%",
+	borderWidth : 1,
+	borderColor : "#EEEEEE",
+	left : 0
+},
+
+"Button" : {
+	backgroundColor : "#61C5AA",
+	color : "#FFFFFF",
+	borderRadius : "4px",
+    font: {
+        fontWeight : "bold"
+    }
+}
+
+".addBtn" : {
+	font : {
+		fontFamily : "konnektiglyphs",
+		fontStyle : "normal",
+		fontSize : "30dp"
+	},
+	borderRadius : 25,
+	height : "50dp",
+	width : "50dp"
+}

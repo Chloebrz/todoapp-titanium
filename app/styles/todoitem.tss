@@ -1,0 +1,31 @@
+"#item" : {
+	height : "60px",
+	borderWidth : 1,
+	borderColor : "#EEEEEE"
+}
+
+".icon" : {
+	height : "50dp",
+	width : "50dp",
+	font : {
+		fontFamily : "konnektiglyphs"
+	}
+}
+
+"#check" : {
+	left : 10
+}
+
+"#itemDesc" : {
+  left : "50dp",
+  right : "50dp",
+  height : Ti.UI.SIZE,
+	font : {
+		fontSize : "18dp"
+	}
+}
+
+"#remove" : {
+	right : 0,
+	color : "#B594C4"
+}

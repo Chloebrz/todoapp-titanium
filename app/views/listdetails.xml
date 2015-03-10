@@ -1,0 +1,21 @@
+<Alloy>
+	<Collection src = "todoitems" />
+	
+	<Window id = "listWindow" class = "container">
+		<View layout = "vertical">		
+			<TextField id = "newTodoItem" hintText = "What do you need to do?"></TextField>
+			<Button class = "addBtn" onClick = "addTodoItem">2</Button>
+		
+			<TableView dataCollection = "todoitems" dataFilter = "filterListItems">
+				<Require src = "todoitem"/>
+			</TableView>
+		</View>
+		
+		<!-- Android menu -->
+	    <Menu platform = "android">
+	      	<MenuItem title = "All" onClick = "showItems"/>
+	      	<MenuItem title = "To do" onClick = "showItems"/>
+	      	<MenuItem title = "Done" onClick = "showItems"/>
+	    </Menu>
+	</Window>
+</Alloy>

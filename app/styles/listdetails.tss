@@ -1,0 +1,14 @@
+
+".container" : {
+  	backgroundColor : "white",
+}
+
+"#titleLabel" : {
+	font: {
+        fontWeight : "bold",
+        fontSize : "20dp"
+   },
+   color : "#737373",
+   textTransform : "uppercase",
+   height : "100px"
+}
