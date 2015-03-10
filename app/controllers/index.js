@@ -18,7 +18,7 @@ $.fbButton.addEventListener("click",function (e) {
 			
 			var home = Alloy.createController("home", args).getView();
 			
-			//if (OS_IOS) $.navGroupWin.openWindow(home);
+			if (OS_IOS) home.open();
 		    
 		    if (OS_ANDROID) {
 		    	home.open({
@@ -56,7 +56,7 @@ function login () {
 	
 	var home = Alloy.createController("home", args).getView();
 	
-	//if (OS_IOS) $.navGroupWin.openWindow(home);
+	if (OS_IOS) home.open();
     
     if (OS_ANDROID) {
     	home.open({
@@ -96,7 +96,7 @@ function register () {
 	
 	var home = Alloy.createController("home", args).getView();
 	
-	//if (OS_IOS) $.navGroupWin.openWindow(home);
+	if (OS_IOS) home.open();
     
     if (OS_ANDROID) {
     	home.open({
