@@ -2,7 +2,7 @@
     <Collection src = "todolists" />
     
     <NavigationWindow id = "navGroupWin">
-        <Window class = "container" title = "My lists">
+        <Window id = "homeWindow" class = "container" title = "My lists">
             <View layout = "vertical">
                 <TextField id = "newTodolist" hintText = "Add list"></TextField>
                 <Button class = "addBtn" onClick = "createTodolist">2</Button>

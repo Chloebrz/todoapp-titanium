@@ -8,6 +8,16 @@ mytodolists.fetch();
 
 alert("Welcome " + args.username + "!");
 
+if (OS_IOS) {
+	
+	var logoutBtn = Ti.UI.createButton({
+		title : "Logout"
+	});
+	$.homeWindow.setRightNavButton(logoutBtn);
+	
+	logoutBtn.addEventListener("click", logout);
+}
+
 function createTodolist () {
 	
 	// if no value, return
@@ -38,7 +48,7 @@ function showTodolist (event) {
 	var listview = Alloy.createController("listdetails", args).getView();
 
 	// open the view
-    if (OS_IOS) $.navGroupWin.openWindow(listview);
+    //if (OS_IOS) out.open();
     
     if (OS_ANDROID) {
     	listview.open({
@@ -52,7 +62,7 @@ function logout () {
 	
 	var out = Alloy.createController("index").getView();
 	
-	//if (OS_IOS) $.navGroupWin.openWindow(out);
+	if (OS_IOS) out.open();
     
     if (OS_ANDROID) {
     	out.open({

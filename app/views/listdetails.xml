@@ -2,13 +2,26 @@
 	<Collection src = "todoitems" />
 	
 	<Window id = "listWindow" class = "container">
-		<View layout = "vertical">		
-			<TextField id = "newTodoItem" hintText = "What do you need to do?"></TextField>
-			<Button class = "addBtn" onClick = "addTodoItem">2</Button>
-		
-			<TableView dataCollection = "todoitems" dataFilter = "filterListItems">
-				<Require src = "todoitem"/>
-			</TableView>
+		<View layout = "vertical">
+			<View layout = "vertical" height = "90%">		
+				<TextField id = "newTodoItem" hintText = "What do you need to do?"></TextField>
+				<Button class = "addBtn" onClick = "addTodoItem">2</Button>
+			
+				<TableView dataCollection = "todoitems" dataFilter = "filterListItems">
+					<Require src = "todoitem"/>
+				</TableView>
+			</View>
+			
+			<!-- iOS: footer with buttons -->
+		    <View platform = "ios" id = "footer" height = "10%">
+	      		<TabbedBar onClick = "showItems" id = "tabbedbar">
+		        	<Labels>
+		          		<Label>All</Label>
+		          		<Label>To do</Label>
+		         		<Label>Done</Label>
+		        	</Labels>
+		      	</TabbedBar>
+		    </View>
 		</View>
 		
 		<!-- Android menu -->
