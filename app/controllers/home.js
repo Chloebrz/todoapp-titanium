@@ -48,7 +48,7 @@ function showTodolist (event) {
 	var listview = Alloy.createController("listdetails", args).getView();
 
 	// open the view
-    //if (OS_IOS) out.open();
+    if (OS_IOS) $.navGroupWin.openWindow(listview);
     
     if (OS_ANDROID) {
     	listview.open({
